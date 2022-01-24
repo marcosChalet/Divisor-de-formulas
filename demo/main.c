@@ -25,6 +25,10 @@ void msgError(){
     menu();
 }
 
+void lista_simbolos(){
+    printf("Disjunção: #\nConjunção: &\nImplicação: >\nNegação: !\n\n");
+}
+
 int menu(){
 
     int op = 0;
@@ -61,6 +65,7 @@ int main(){
 		exit(0);
 	}
 
+    lista_simbolos();
 	printf("Entre com a formula:\n-> ");
 	scanf("%[^\n]s", form);
 	puts("");
